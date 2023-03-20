@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<!--
+        Enlaces:conocido tambien por links popularmente.Su objetivo es conectar una pagina web con otra pagina web,con un recurso tanto interno como externo,o con otro sitio web
+        
+        tienen el atributo obligatorio href, donde le especificamos la ruta del recuroso o sitio
+        que queremos obtener.
+
+        tambien tiene el atributo traget,que configura como queremos visualizar el recurso o sitio que solicitamos
+
+        Rutas Absolutas:
+        tienen un protocolo, http o https y son unicas en la red se suelen utilizar para rutas externas.
+
+        Rutas relativas:
+        pueden ser relativas al punto donde nos encontramos o realtivas a la raiz del proyecto
+
+        no usan protocolo
+
+        si el recurso se encuentra al mismo nivel (en la misma carpeta) pondremos unicamente el nombre del archivo.
+
+        si necesitamos salir de la carpeta actual usaremos ../ y se pone uno por cada nivel de (carpeta) de la que queramos salir.
+
+    -->
+<body> 
+    <h1>Home</h1>
+    <nav>
+    <p><a href="/quienesSomos/blog.html#posteo_1"> posteo 1 </a>></p>
+    <p><a href="/quienesSomos/blog.html#posteo_2"> posteo 2 </a>></p>
+    <p><a href="/quienesSomos/blog.html#posteo_3"> posteo 3 </a>></p>
+    <p><a href="/quienesSomos/blog.html#posteo_4"> posteo 4 </a>></p>
+    <p><a href="/quienesSomos/blog.html#posteo_5"> posteo 5 </a>></p>
+   </nav>
+   
+    <a href="quienesSomos/contacto.html"  download="">ir a contacto</a><!-- ruta relativa:  ../utiliza para volver a una carpeta anterior y /se utiliza para acceder entre carpetas, enlaces Internos-->
+    <a href="https://google.com" target="_blank">Ir a google</a><!-- ruta absuluta: http:si es un recurso sin seguridad , https: si es un recurso que requiere seguridad , es para acceder fuera del servidor a enlases externos-->
+    <a href="https://youtube.com" target="_blank">ir a youtube</a>
+
+
+    <a href="/assets/imagenes/images.jpg" download > descargar gato </a>
+
+    
+    <a href="/assets/imagenes/vista.jpg" download="">descarga la mejor vista </a>
+</body>
+</html>

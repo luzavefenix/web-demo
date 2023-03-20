@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <style>
+       col:nth-child(1) {
+            background-color: lightcoral;
+        }
+     col:nth-child(2) {
+            background-color: steelblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption> HORARIO DE CLASES </caption>
+        <colgroup>
+            <col span="5">
+            <col>
+        </colgroup>
+        <thead>
+           <tr>
+              <th></th>
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miercoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+           </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <td>8:30-9:30</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+            <td>Sociales</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+        </tr>
+
+        <tr>
+            <td>9:30-10:25</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Matematicas</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+        </tr>
+
+        <tr>
+            <td>10:25-11:20</td>
+            <td>Educacion fisica</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Educacion fisica</td>
+        </tr>
+
+        <tr>
+            <td>11:20-11:45</td>
+            <td colspan="5">Recreo</td>
+        </tr>
+
+        <tr>
+            <td>11:45-12:40</td>
+            <td>Ingles</td>
+            <td>sociales</td>
+            <td>Ingles</td>
+            <td>Tutorias</td>
+            <td>Ingles</td>
+        </tr>
+
+        <tr>
+            <td>12:40-13:35</td>
+            <td rowspan="2">Tecnologia</td>
+            <td>Educacion Fisica</td>
+            <td>Plastica</td>
+            <td>Religion</td>
+            <td>Musica</td>
+        </tr>
+        <tr>
+            <td>13:35-14:30</td>
+            <td>Frances</td>
+            <td>Tecnologia</td>
+            <td>Frances</td>
+            <td>Tecnologia</td>
+
+        </tr>
+    </tbody> <!--el tbody es opcional mientras que no le pongas a la tabla thead-->
+    <tfoot>
+        <tr>
+            <td colspan="5">total de asignaturas:</td>
+            <td>12</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>

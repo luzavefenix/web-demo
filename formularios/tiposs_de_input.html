@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipo de input</title>
+</head>
+<!--input type:
+button: se comporta igual que un boton <button>
+
+    color:se utiliza para especificar un color
+
+date -> se utiliza para introducir una fecha 
+
+datetime-> obsoleto
+
+datetime local -> fecha y hora, no funciona en firefox 
+
+email -> se utiliza para introducir un email
+
+hidden -> campo oculto, puede contener valor pero no se 
+mostrara 
+
+month -> se utiliza para introducir un mes
+
+number -> se utiliza para valores numerico 
+
+password -> se utiliza para contraseñas
+
+range -> se utiliza para establecer un rango
+
+reset -> se utiliza para resetear el formulario
+
+search -> se utiliza para las barrras de busqueda
+
+submit -> se utiliza para enviar el formulario 
+
+tel -> se utiliza para introducir numeros telefonicos
+
+text -> valor por defecto
+
+time -> se utiliza para introducir una hora
+
+url -> se utiliza urls
+
+week -> se utiliza para introducir el numero de semana del año.-->
+<body>
+    <form>
+        <input>
+        <input type="submit" value="enviar input">
+        <button>enviar</button>
+    </form>
+    <form>
+        <input type="date">
+        <input type="datetime-local">
+        <!--para firefox es asi-->
+        <input type="date">
+        <input type="time">
+
+        <input type="month">
+
+        <input type="week">
+    </form>
+    <div>
+    <label> search
+        <input type="search">
+     </label>
+    </div>
+    <div>
+     <label> telefono
+        <input type="tel">
+     </label>
+    </div> 
+    <div>
+     <label> email
+        <input type="email">
+     </label>
+    </div>
+    <div>
+     <label> password
+        <input type="password">
+     </label>
+    </div>
+    <div>
+     <label> url
+        <input type="url">
+     </label>
+    </div>
+     
+    <!--tipos de input que no tienen categoria -->
+
+    <form>
+      <input type="color">
+      <input type="number">
+      <input type="range" step="10" min="0" max="20">
+      <input type="reset">
+      <input type="text">
+
+
+    </form>
+</body>
+</html> 

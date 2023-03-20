@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contenido embebido</title>
+    <style>
+        img{
+            max-width:  100%;
+           /* width: 30px;*/
+
+        }
+        video, 
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            width: 200px;
+
+            
+        }
+    </style>
+</head>
+<!--
+    width: 30px 
+    contenido mebebido que es -> el contenido embebido es todoel contenido que nos traemos desde fuera 
+
+    estos archivos son  los que mas peso(tamaño) añaden a un sitio web
+    los tipos mas conocidos son :
+    -imagenes
+    -audio
+    -video
+    -iframes
+
+    IMAGENES: tenemos dos tipos de imagenes tenemos los tipo vectoriales y mapa de bits
+    vectoriales:
+    -svg(recomendado siempre que se pueda, no añade nada de peso a la pagina,logotipos,cualquier contenido que no sea relevante se debe usar svg)
+
+    mapa de bits:
+    -jpg(si la imagen que voy a poner en la pagina no necesita ni transparencia ni animacion usamos formato jpg)
+
+    -png 8 y 24 (si se necesita transparencia, soporta transparencia que no tiene fondo atras)
+    -gif(si se necesita una imagen animadas)
+    -webp(el formato que menos pesa)
+    
+    DPR(device pixel ratio)
+    es la relacion que existe entre los pixeles reales que tienen el ddispositivo y los pixeles que tenemos disponibles para "pintar" contenido.
+
+    DPR = pixeles reales / pixeles disponibles
+-->
+<body>
+    <h1>Contenido Embebido</h1>
+    <!--
+        <img src="/contenido-embebido/assets/imagenes/social-facebook-svgrepo-com (1).svg" alt="icono de facebook"> 
+      <img src="/contenido-embebido/assets/imagenes/portada-mobile.jpg" width="300" alt="" >
+    para las paginas que no soporten webp se hace:
+ src="/contenido-embebido/assets/imagenes/portada-mobile.jpg" 
+para que tengan una copia de respaldo guardado
+
+    <img srcset="
+    /contenido-embebido/assets/imagenes/portada.webp,
+    /contenido-embebido/assets/imagenes/portada-mobile.jpg
+    /contenido-embebido/assets/imagenes/portada-mobile.webp 2x,
+    /contenido-embebido/assets/imagenes/portada-mobile.jpg 2x " 
+    src="/contenido-embebido/assets/imagenes/portada-mobile.jpg" alt="imagen de portada">
+    
+    picture-> es como srcset pero nos da mas opciones.
+    -->
+     <!--<source srcset=" /contenido-embebido/assets/imagenes/portada.webp,
+       /contenido-embebido/assets/imagenes/portada-mobile.jpg" >
+       <img src="/contenido-embebido/assets/imagenes/portada-mobile.jpg" alt=""
+       
+       <source srcset="/contenido-embebido/assets/imagenes/portada-mobile.webp,
+       /contenido-embebido/assets/imagenes/portada-mobile.jpg" media="(max-width:1200px)">
+       <img src="/contenido-embebido/assets/imagenes/portada.jpg" alt="portada"> 
+       <picture>
+
+       </picture>
+       
+
+       controls:atributo necesario para reproducir.
+
+       loop:repite el video desde que termina desde cero.
+
+       poster: para elegir la imagen de portada del video,solo esta en video.
+
+       autoplay:reproduce automaticamente cuando se reinicia la pagina.
+
+       
+       <audio src="/contenido-embebido/assets/audio/el-taxi.mp3" controls autoplay muted>Mp3</audio> 
+     <video src="/contenido-embebido/assets/videos/sebaypalito.mp4" controls  loop poster="/contenido-embebido/assets/imagenes/Pikachu.webp " autoplay ></video>
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/xfucrss99p4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+     ->figure seria: se usa para poner por ejem grafico o tablas, siempre que se quiera romper el flujo del contenido pero que si lo quitamos seria igual.
+     -->
+
+     <h2>Gatoss</h2>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A distinctio corrupti illo minima quam iusto voluptatum, soluta inventore id omnis adipisci, accusantium doloribus aperiam ex velit ea fugit, labore quia?</p>
+
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A distinctio corrupti illo minima quam iusto voluptatum, soluta inventore id omnis adipisci, accusantium doloribus aperiam ex velit ea fugit, labore quia?</p>
+     <figure>
+        <img src="https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=1067" alt="gato enojado" >
+        <figcaption>Gato enojado</figcaption>
+     </figure>
+     
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A distinctio corrupti illo minima quam iusto voluptatum, soluta inventore id omnis adipisci, accusantium doloribus aperiam ex velit ea fugit, labore quia?</p>
+
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A distinctio corrupti illo minima quam iusto voluptatum, soluta inventore id omnis adipisci, accusantium doloribus aperiam ex velit ea fugit, labore quia?</p>
+</body> 
+
+</html>
